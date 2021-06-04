@@ -13,6 +13,8 @@
 
 
 ## Introduction
+This repo is the code implementation for "[Generate, Prune, Select: A Pipeline for Counterspeech Generation against Online Hate Speech](https://arxiv.org/pdf/2106.01625.pdf)" (ACL-IJCNLP Findings 2021). 
+
 This project aims at __counterspeech generation__, which is, for a given hate speech instance, to generate a counter response intending to de-escalate the hateful setting.
 An illustrative example pair is shown in Table 1, where the counterspeech was manually crafted in response to the hate speech instance.
 
@@ -50,7 +52,7 @@ python ./VAE_Text_Generation.py --dataset reddit --training
 ```
 
 ### Module 2: Candidate Pruning
-Please download our pretrained grammaticality classifier [here](https://drive.google.com/file/d/1Hw5na_Iy4-kGEoX60bD8vXYeJDQrzyj6/view?usp=sharing), unzip it, rename the folder ```grammar_cola``` and put it under ```./tmp/```
+Please download our pretrained grammaticality classifier [here](https://drive.google.com/file/d/1Hw5na_Iy4-kGEoX60bD8vXYeJDQrzyj6/view?usp=sharing), unzip it, rename the folder ```grammar_cola``` and put it under ```./tmp/```.
 
 ### Module 3: Response Selection
 ```
